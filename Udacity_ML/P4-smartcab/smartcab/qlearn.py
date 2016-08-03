@@ -18,7 +18,7 @@ class QLearnAgent(Agent):
         self.newState     = None
         self.action       = None
         self.alpha       = 0.9
-        self.gamma       = 0.7
+        self.gamma       = 0.2
         self.epsilon     = 0.01
         self.reward      = 0
         self.totalReward = 0
