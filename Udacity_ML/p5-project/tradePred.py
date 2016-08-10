@@ -50,6 +50,21 @@ data['openCloseChg%'] = (data['Adj Close'] - data['Open']) * 100 / data['Open']
 # make up the new feature for dataset
 dataset = pd.DataFrame(data[['Volume', 'highLowChg%', 'openCloseChg%', 'Adj Close']])
 
+#plot features
+
+#style.use('ggplot')
+#data['highLowChg%'].plot(label='highLowChg')
+#data['openCloseChg%'].plot(label='openCloseChg')
+#data['Volume'] = data['Volume'] / 10000000
+#data['Volume'].plot(kind='bar')
+#data['Adj Close'].plot.bar(label='Adj Close')
+
+#plt.legend(loc= 'lower right')
+#plt.xlabel('Date')
+#plt.ylabel('Volume(1e7)')
+#plt.title('Stock Price Prediction for : ' + dataName.upper())
+#plt.show()
+
 #print data #[debug]
 
 label_y = 'Adj Close' # create label 
